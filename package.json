@@ -1,7 +1,7 @@
 {
-  "name": "turborepo-basic-shared",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@jonbellah/tutorials",
+  "author": "Jon Bellah <jon@bellah.dev>",
+  "version": "0.1.0",
   "workspaces": [
     "apps/*",
     "packages/*"
