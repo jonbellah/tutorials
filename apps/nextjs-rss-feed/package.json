@@ -1,17 +1,25 @@
 {
   "name": "@jonbellah/nextjs-rss-feed",
+  "author": "Jon Bellah <jon@bellah.dev>",
+  "license": "MIT",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "NEXT_PUBLIC_ROOT_URL=http://localhost:3000 next dev",
+    "generate:rss": "node scripts/rss.mjs",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "^12.0.7",
+    "next-connect": "^0.11.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@jonbellah/tsconfig": "*",
+    "@types/react": "^17.0.38",
     "eslint": "^8.5.0",
     "eslint-config-next": "^12.0.7"
   }
